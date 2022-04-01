@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
-    <!-- Insérer un fichier normalize ? même si non requis par le projet -->
+    <!-- Insérer un fichier normalize ? Utile, même si non requis par le projet, à voir avec mentor -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css">
     <!-- Insérer fontawesome -->
-
+    <script src="https://kit.fontawesome.com/5ac0a03e8f.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -20,18 +21,21 @@
 
     <main>
         <div class="location">
-            <div class="location__icon">#</div>
-            <div class="location__city">#</div>
+            <div class="location__icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="location__city">
+                <p>Paris, Belleville</p>
+            </div>
         </div>
 
 
-        <section class="proposition">
-            <!-- Nom à changer, trouver un nom plus approprier-->
-            <div class="proposition__container">
+        <section class="showcase">
+            <div class="showcase__container">
                 <!--Div peut-être inutile, à voir par la suite-->
-                <h2 class="proposition__title">Réservez le menu qui vous convient</h2>
-                <p class="proposition__text">#</p>
-                <div class="proposition__button">
+                <h2 class="showcase__title">Réservez le menu qui vous convient</h2>
+                <p class="showcase__text">#</p>
+                <div class="showcase__button">
                     <p>#</p>
                 </div>
             </div>
@@ -40,7 +44,7 @@
 
 
         <section class="functioning">
-            <div class="functioning__container">
+            <div class="functioning__steps">
                 <!--Div peut-être inutile, à voir par la suite-->
                 <h2 class="functioning__title">Fonctionnement</h2>
                 <div class="functioning__steps">
