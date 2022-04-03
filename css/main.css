@@ -3,3 +3,30 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* test pour enlever les points se situant après les chiffres dans les listes ordonnés. a vérifier*/
+
+ol { 
+  counter-reset: item;
+  list-style-type: none;
+}
+
+li { display: block; }
+
+li:before { 
+  content: counter(item) "  "; 
+  counter-increment: item 
+}
+
+.functioning__step {
+  display: flex;
+}
+
+.location {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
