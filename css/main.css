@@ -30,3 +30,12 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.restaurants-card {
+  width: 350px;
+}
+
+.restaurants-card__image {
+  width: 350px;
+  height: 250px;
+}
