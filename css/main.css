@@ -36,25 +36,33 @@ a {
 
 .restaurants-card__container {
   position: relative;
-  text-align: center;
 }
 
 .restaurants-card__float {
   position: absolute;
   top: 15px;
-  right: 30px;
+  right: 65px;
   background-color: #99E2D0;
 }
 
 .restaurants-card__image {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 220px;
+}
+
+.restaurants-page__image {
+  width: 300px;
+  height: 220px;
 }
 
 .restaurants__cards {
   width:100%;
   padding-left:0px;
 }
+
+/*.restaurants-page__title {
+  display: flex;
+}*/
 
 .footer__links {
   padding-left:0px;
