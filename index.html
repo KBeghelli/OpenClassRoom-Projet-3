@@ -14,18 +14,17 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <img id="logo" src="images/logo/ohmyfood.png" alt="Logo ohmyfood" />
     </header>
 
     <main class="main-page">
         <div class="location">
-            <div class="location__icon">
+            <p>
+            <span class="location__icon">
                 <i class="fas fa-map-marker-alt circle-icon"></i>
-            </div>
-            <div class="location__city">
-                <p>Paris, Belleville</p>
-            </div>
+            </span>
+            Paris, Belleville</p>
         </div>
 
 
@@ -47,14 +46,17 @@
                 <!--Div peut-être inutile, à voir par la suite-->
                 <h2 class="functioning__title main-page__title">Fonctionnement</h2>
                 <ol class="functioning__list">
+                    
                     <li class="functioning__step">
+                        <span class="functioning__order">1</span>
                         <div class="functioning__icon">
-                            <i class=" fas fa-solid fa-mobile-alt"></i>
+                            <i class= "fas fa-solid fa-mobile-alt"></i>
                         </div>
                         <p class="functioning__text">Choisissez un restaurant</p>
                     </li>
 
                     <li class="functioning__step">
+                        <span class="functioning__order">2</span>
                         <div class="functioning__icon">
                             <i class="fas fa-solid fa-list-ul"></i>
                         </div>
@@ -62,6 +64,7 @@
                     </li>
 
                     <li class="functioning__step"> <!-- utiliser un modifier pour mettre backgroundblue?-->
+                        <span class="functioning__order">3</span>
                         <div class="functioning__icon">
                             <i class="fas fa-solid fa-store"></i>
                         </div>
@@ -78,9 +81,7 @@
                 <a href="#">
                     <li class="restaurants-card">
                         <div class="restaurants-card__container">
-                            <div class="restaurants-card__float">
-                                <p>Nouveau</p>
-                            </div>
+                            <span class="restaurants-card__float">Nouveau</span>
                             <img class="restaurants-card__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="dans un restaurant, zoom sur un plat servi à une personne">
                         </div>
 
@@ -99,9 +100,7 @@
                 <a href="#">
                     <li class="restaurants-card">
                         <div class="restaurants-card__container">
-                            <div class="restaurants-card__float">
-                                <p>Nouveau</p>
-                            </div>
+                            <span class="restaurants-card__float">Nouveau</span>
                             <img class="restaurants-card__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="zoom sur une assiette remplis dans un restaurant">
                         </div>
 
@@ -118,10 +117,7 @@
 
                 <a href="#">
                     <li class="restaurants__card">
-                        <div class="restaurants-card__container">
-                            <img class="restaurants-card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un dessert servis dans un restaurant">
-                        </div>
-
+                        <img class="restaurants-card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un dessert servis dans un restaurant">
                         <div class="restaurants-card__block">
                             <div class="restaurants-card__information">
                                 <h3 class="restaurants-card__name">À la française</h3>
@@ -135,9 +131,7 @@
 
                 <a href="#">
                     <li class="restaurants__card">
-                        <div class="restaurants-card__container">
                             <img class="restaurants-card__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat remplis dans un restaurant">
-                        </div>
 
                         <div class="restaurants-card__block">
                             <div class="restaurants-card__information">
@@ -163,26 +157,26 @@
             <li class="footer__link">
                 <a href="#">
                     <i class="#"></i>
-                    <h3 class="footer__title">Proposer un restaurant</h3>
+                    <p class="footer__title">Proposer un restaurant</p>
                 </a>
             </li>
 
             <li class="footer__link">
                 <a href="#">
                     <i class="#"></i>
-                    <h3 class="footer__title">Devenir partenaire</h3>
+                    <p class="footer__title">Devenir partenaire</p>
                 </a>
             </li>
 
             <li class="footer__link">
                 <a href="#">
-                    <h3 class="footer__title">Mentions légales</h3>
+                    <p class="footer__title">Mentions légales</p>
                 </a>
             </li>
 
             <li class="footer__link">
                 <a href="#">
-                    <h3 class="footer__title">Contact</h3>
+                    <p class="footer__title">Contact</p>
                 </a>
             </li>
         </ul>

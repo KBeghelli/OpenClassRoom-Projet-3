@@ -7,23 +7,22 @@ body {
 /* test pour enlever les points se situant après les chiffres dans les listes ordonnés. a vérifier*/
 
 ol { 
-  counter-reset: item;
   list-style-type: none;
 }
 
 li { display: block; }
 
-li:before { 
-  content: counter(item) "  "; 
-  counter-increment: item 
-}
 
 .functioning__step {
   display: flex;
 }
 
-.location {
-  display: flex;
+.functioning__list {
+  padding-left: 0px;
+}
+
+.functioning__text {
+  margin-top: 0px;
 }
 
 a {
@@ -35,7 +34,28 @@ a {
   width: 350px;
 }
 
+.restaurants-card__container {
+  position: relative;
+  text-align: center;
+}
+
+.restaurants-card__float {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-color: #99E2D0;
+}
+
 .restaurants-card__image {
   width: 350px;
   height: 250px;
+}
+
+.restaurants__cards {
+  width:100%;
+  padding-left:0px;
+}
+
+.footer__links {
+  padding-left:0px;
 }
