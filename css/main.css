@@ -1,17 +1,159 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import "./pages/footer";
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"./pages/footer\";\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 4:9  root stylesheet";
+.functioning {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
 }
+.functioning__step {
+  border-radius: 15px;
+  background-color: #99E2d0;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.functioning__list {
+  padding-left: 0px;
+}
+.functioning__icon {
+  padding-left: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.functioning__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.functioning__order {
+  background-color: #9356DC;
+  border-radius: 15px;
+  position: absolute;
+  left: 3.5%;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+.showcase {
+  text-align: center;
+  background-color: #bff2d5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.showcase__title {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.showcase__text {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.showcase__button {
+  margin-bottom: 10px;
+}
+.showcase__button p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header__logo {
+  text-align: center;
+  background-color: #bff2d5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.location {
+  text-align: center;
+  background-color: #99E2d0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.location p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.restaurants-card {
+  width: 1000px;
+}
+
+.restaurants-card__image {
+  width: 1000px;
+}
+
+.img {
+  width: 500px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+li {
+  display: block;
+}
+
+.functioning__list {
+  padding-left: 0px;
+}
+
+.functioning__text {
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants-card {
+  width: 350px;
+}
+
+.restaurants-card__container {
+  position: relative;
+}
+
+.restaurants-card__float {
+  position: absolute;
+  top: 15px;
+  right: 65px;
+  background-color: #99E2D0;
+}
+
+.restaurants-card__image {
+  width: 300px;
+  height: 220px;
+}
+
+.menu__banner {
+  width: 300px;
+  height: 220px;
+}
+
+.restaurants__cards {
+  width: 100%;
+  padding-left: 0px;
+}
+
+/*.restaurants-page__title {
+  display: flex;
+}*/
+.footer__links {
+  padding-left: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

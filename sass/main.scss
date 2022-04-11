@@ -1,7 +1,11 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./pages/footer";
+@import "./pages/functioning";
+@import "./pages/showcase";
+@import "./layouts/footer";
+@import "./layouts/mheader";
+@import "./pages/location";
 
 
 
@@ -27,10 +31,6 @@ ol {
   
   li { display: block; }
   
-  
-  .functioning__step {
-    display: flex;
-  }
   
   .functioning__list {
     padding-left: 0px;

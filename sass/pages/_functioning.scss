@@ -1,0 +1,47 @@
+.functioning {
+    padding-left:5%;
+    padding-right:5%;
+    position: relative;
+    
+    &__step {
+        border-radius: 15px;
+        background-color: #99E2d0;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom:10px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    &__list {
+        padding-left: 0px;
+    }
+
+    &__icon {
+        padding-left:40px;
+        padding-top: 2px;
+        padding-bottom: 2px;    
+    }
+    
+    &__text {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 15%;
+        padding-right:15%;
+    }
+
+    &__order {
+        background-color: $primary-color;
+        border-radius: 15px;
+        position: absolute;
+        left:3.5%;
+        padding-left:7px;
+        padding-right:7px;
+        padding-top:2px;
+        padding-bottom:2px;
+        color:white;
+    }
+      
+}

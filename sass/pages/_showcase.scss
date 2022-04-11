@@ -1,0 +1,27 @@
+.showcase {
+    text-align:center;
+    background-color: $test;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    &__title {
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:0px;
+        margin-bottom:10px;
+    }
+
+    &__text {
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    &__button {
+        margin-bottom: 10px;
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+}
