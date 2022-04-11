@@ -1,0 +1,84 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./pages/footer";
+
+
+
+%shadow {
+    box-shadow: 0px 1px 5px black;
+}
+
+.restaurants-card {
+    width: 1000px;
+}
+
+.restaurants-card__image {
+    width: 1000px;
+}
+
+.img {
+    width:500px;
+}
+
+ol { 
+    list-style-type: none;
+  }
+  
+  li { display: block; }
+  
+  
+  .functioning__step {
+    display: flex;
+  }
+  
+  .functioning__list {
+    padding-left: 0px;
+  }
+  
+  .functioning__text {
+    margin-top: 0px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .restaurants-card {
+    width: 350px;
+  }
+  
+  .restaurants-card__container {
+    position: relative;
+  }
+  
+  .restaurants-card__float {
+    position: absolute;
+    top: 15px;
+    right: 65px;
+    background-color: #99E2D0;
+  }
+  
+  .restaurants-card__image {
+    width: 300px;
+    height: 220px;
+  }
+  
+  .menu__banner {
+    width: 300px;
+    height: 220px;
+  }
+  
+  .restaurants__cards {
+    width:100%;
+    padding-left:0px;
+  }
+  
+  /*.restaurants-page__title {
+    display: flex;
+  }*/
+  
+  .footer__links {
+    padding-left:0px;
+  }

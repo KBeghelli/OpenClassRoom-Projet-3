@@ -1,69 +1,17 @@
-body {
-  background-color: white;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @import "./pages/footer";
+ *   |         ^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\main.scss 4:9  root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
-
-/* test pour enlever les points se situant après les chiffres dans les listes ordonnés. a vérifier*/
-
-ol { 
-  list-style-type: none;
-}
-
-li { display: block; }
-
-
-.functioning__step {
-  display: flex;
-}
-
-.functioning__list {
-  padding-left: 0px;
-}
-
-.functioning__text {
-  margin-top: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants-card {
-  width: 350px;
-}
-
-.restaurants-card__container {
-  position: relative;
-}
-
-.restaurants-card__float {
-  position: absolute;
-  top: 15px;
-  right: 65px;
-  background-color: #99E2D0;
-}
-
-.restaurants-card__image {
-  width: 300px;
-  height: 220px;
-}
-
-.restaurants-page__image {
-  width: 300px;
-  height: 220px;
-}
-
-.restaurants__cards {
-  width:100%;
-  padding-left:0px;
-}
-
-/*.restaurants-page__title {
-  display: flex;
-}*/
-
-.footer__links {
-  padding-left:0px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"./pages/footer\";\d\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 4:9  root stylesheet";
 }

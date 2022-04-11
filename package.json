@@ -1,0 +1,19 @@
+{
+  "name": "p3-openclassroom",
+  "version": "1.0.0",
+  "description": "Principe du projet : Réaliser 1 page principale et 4 pages présentant les produits pour un restaurant. Les maquettes sont fournis, ainsi qu'une liste d'exigence et de contrainte.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css --style nested"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBeghelli/P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KBeghelli/P3/issues"
+  },
+  "homepage": "https://github.com/KBeghelli/P3#readme"
+}
