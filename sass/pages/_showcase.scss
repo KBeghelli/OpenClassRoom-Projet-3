@@ -1,15 +1,18 @@
 .showcase {
     text-align:center;
-    background-color: $fourth-color;
+    background-color: white;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
     padding-bottom: $section-space;
     
-    .main-page__title {
-        padding-top: $section-space;
+    &__title {
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:0px;
+        margin-bottom:10px;
     }
-
+    
     &__text {
         margin-left:10%;
         margin-right:10%;

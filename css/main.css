@@ -1,18 +1,28 @@
 /* variables pour la couleur */
+/*backcolor nouveau // boutonp2 // bordureentree*/
+/* meme couleur que commande p2 */
+/*carte p2*/
 /* variables pour les paddings/margin */
 .functioning {
   padding-left: 5%;
   padding-right: 5%;
   position: relative;
+  margin-bottom: 40px;
+}
+.functioning .main-page__title {
+  padding-top: 40px;
 }
 .functioning__step {
   border-radius: 15px;
-  background-color: #99E2d0;
+  background-color: #f6f6f6;
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.functioning__step--different-color {
+  background-color: #f5edff;
 }
 .functioning__list {
   padding-left: 0px;
@@ -21,6 +31,9 @@
   padding-left: 40px;
   padding-top: 2px;
   padding-bottom: 2px;
+}
+.functioning i.fas.fa-solid.fa-store {
+  color: #9356DC;
 }
 .functioning__text {
   margin-top: 0px;
@@ -44,14 +57,17 @@
 
 .showcase {
   text-align: center;
-  background-color: #bff2d5;
+  background-color: white;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.showcase .main-page__title {
-  padding-top: 40px;
+.showcase__title {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .showcase__text {
   margin-left: 10%;
@@ -67,7 +83,7 @@
 
 .header__logo {
   text-align: center;
-  background-color: #bff2d5;
+  background-color: white;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 20px;
@@ -76,7 +92,7 @@
 
 .location {
   text-align: center;
-  background-color: #99E2d0;
+  background-color: #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -92,6 +108,16 @@ html {
 
 .header__logo, .footer__logo, .menu__header__name {
   font-family: "Shrikhand", cursive;
+}
+
+p, h1, h2, h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.restaurants {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .restaurants-card {

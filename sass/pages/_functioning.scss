@@ -1,16 +1,25 @@
 .functioning {
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:$sideways-light-space;
+    padding-right:$sideways-light-space;
     position: relative;
+    margin-bottom:$section-space;
+
+    .main-page__title {
+        padding-top:$section-space;
+    }
     
     &__step {
         border-radius: 15px;
-        background-color: #99E2d0;
+        background-color: $reservez-color;
         display: flex;
         margin-top: 10px;
         margin-bottom:10px;
         padding-top:20px;
         padding-bottom:20px;
+    }
+
+    &__step--different-color {
+        background-color: #f5edff;
     }
 
     &__list {
@@ -21,6 +30,10 @@
         padding-left:40px;
         padding-top: 2px;
         padding-bottom: 2px;    
+    }
+
+    i.fas.fa-solid.fa-store {
+        color: $primary-color;
     }
     
     &__text {

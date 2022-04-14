@@ -8,7 +8,9 @@
 @import "./pages/pheader";
 @import "./pages/location";
 @import "./base/typography";
-
+@import "./base/reset-browser-style";
+@import "./base/breakpoints";
+@import "./pages/restaurants-cards";
 
 
 %shadow {
