@@ -4,7 +4,7 @@
   "description": "Principe du projet : Réaliser 1 page principale et 4 pages présentant les produits pour un restaurant. Les maquettes sont fournis, ainsi qu'une liste d'exigence et de contrainte.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/main.css --style nested"
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
   },
   "repository": {
     "type": "git",

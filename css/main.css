@@ -1,3 +1,5 @@
+/* variables pour la couleur */
+/* variables pour les paddings/margin */
 .functioning {
   padding-left: 5%;
   padding-right: 5%;
@@ -46,13 +48,10 @@
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
-.showcase__title {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 0px;
-  margin-bottom: 10px;
+.showcase .main-page__title {
+  padding-top: 40px;
 }
 .showcase__text {
   margin-left: 10%;
@@ -84,6 +83,15 @@
 .location p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__logo, .footer__logo, .menu__header__name {
+  font-family: "Shrikhand", cursive;
 }
 
 .restaurants-card {
