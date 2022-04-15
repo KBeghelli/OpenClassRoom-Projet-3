@@ -11,10 +11,6 @@
 @import "./base/reset-browser-style";
 @import "./base/breakpoints";
 @import "./pages/restaurants-cards";
-
-  .restaurants-card {
-    width: 350px;
-  }
   
   .restaurants-card__container {
     position: relative;
@@ -25,11 +21,6 @@
     top: 15px;
     right: 65px;
     background-color: #99E2D0;
-  }
-  
-  .restaurants-card__image {
-    width: 300px;
-    height: 220px;
   }
   
   .menu__banner {

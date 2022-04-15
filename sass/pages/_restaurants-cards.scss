@@ -1,5 +1,13 @@
 .restaurants {
     padding-left:$sideways-light-space;
     padding-right:$sideways-light-space;
-    width: 100%;
+}
+
+.restaurants-card {
+
+    &__image {
+        object-fit: cover;
+        width:100%;
+        height: auto;
+    }
 }
