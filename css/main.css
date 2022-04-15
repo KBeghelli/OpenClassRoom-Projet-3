@@ -1,7 +1,7 @@
 /* variables pour la couleur */
 /*backcolor nouveau // boutonp2 // bordureentree*/
 /* meme couleur que commande p2 */
-/*carte p2*/
+/*reservez // carte p2*/
 /* variables pour les paddings/margin */
 .functioning {
   padding-left: 5%;
@@ -48,10 +48,10 @@
   border-radius: 15px;
   position: absolute;
   left: 3.5%;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   color: white;
 }
 
@@ -77,8 +77,20 @@
   margin-bottom: 10px;
 }
 .showcase__button p {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #353535;
+}
+.footer a {
+  color: white;
+}
+.footer__links {
+  padding-left: 0px;
 }
 
 .header__logo {
@@ -102,7 +114,7 @@
 }
 
 html {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -110,26 +122,13 @@ html {
   font-family: "Shrikhand", cursive;
 }
 
+h1, h2, h3 {
+  font-size: 19px;
+}
+
 p, h1, h2, h3 {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.restaurants {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.restaurants-card {
-  width: 1000px;
-}
-
-.restaurants-card__image {
-  width: 1000px;
-}
-
-.img {
-  width: 500px;
 }
 
 ol {
@@ -140,17 +139,15 @@ li {
   display: block;
 }
 
-.functioning__list {
-  padding-left: 0px;
-}
-
-.functioning__text {
-  margin-top: 0px;
-}
-
 a {
   text-decoration: none;
   color: black;
+}
+
+.restaurants {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
 }
 
 .restaurants-card {
@@ -186,8 +183,5 @@ a {
 /*.restaurants-page__title {
   display: flex;
 }*/
-.footer__links {
-  padding-left: 0px;
-}
 
 /*# sourceMappingURL=main.css.map */

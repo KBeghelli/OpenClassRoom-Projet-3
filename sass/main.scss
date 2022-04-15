@@ -12,43 +12,6 @@
 @import "./base/breakpoints";
 @import "./pages/restaurants-cards";
 
-
-%shadow {
-    box-shadow: 0px 1px 5px black;
-}
-
-.restaurants-card {
-    width: 1000px;
-}
-
-.restaurants-card__image {
-    width: 1000px;
-}
-
-.img {
-    width:500px;
-}
-
-ol { 
-    list-style-type: none;
-  }
-  
-  li { display: block; }
-  
-  
-  .functioning__list {
-    padding-left: 0px;
-  }
-  
-  .functioning__text {
-    margin-top: 0px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
   .restaurants-card {
     width: 350px;
   }
@@ -82,7 +45,3 @@ ol {
   /*.restaurants-page__title {
     display: flex;
   }*/
-  
-  .footer__links {
-    padding-left:0px;
-  }

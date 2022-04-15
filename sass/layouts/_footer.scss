@@ -1,0 +1,12 @@
+.footer {
+    padding-left: $sideways-light-space;
+    padding-right: $sideways-light-space;
+    background-color: $footer-color;
+    a {
+        color: white;
+    }
+
+    &__links {
+        padding-left: 0px;    
+    }
+}
