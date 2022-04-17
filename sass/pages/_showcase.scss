@@ -1,29 +1,33 @@
 .showcase {
-    text-align:center;
+    text-align: center;
     background-color: white;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: $section-space;
-    
+    background-color: $reservez-color;
+
     &__title {
-        margin-left:20%;
-        margin-right:20%;
-        margin-top:0px;
-        margin-bottom:10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
-    
+
     &__text {
-        margin-left:10%;
-        margin-right:10%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     &__button {
+        color: white;
         margin-bottom: 10px;
-        p {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+        background-color: $explorer-bas-color;
+        border: solid 2px $explorer-bas-color;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 15px;
+        border-radius: 20px;
     }
 }
-

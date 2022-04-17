@@ -6,16 +6,17 @@
 
     .main-page__title {
         padding-top: $section-space;
+        padding-bottom: 10px;
     }
 
     &__step {
         border-radius: 15px;
         background-color: $reservez-color;
         display: flex;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         padding-top: 20px;
         padding-bottom: 20px;
+        box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229,229,229,0);
     }
 
     &__step--different-color {
@@ -43,6 +44,7 @@
         padding-bottom: 2px;
         padding-left: 15%;
         padding-right: 15%;
+        font-weight: bold;
     }
 
     &__order {
