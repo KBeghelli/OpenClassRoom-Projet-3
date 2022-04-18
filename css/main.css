@@ -184,15 +184,15 @@ a {
 }
 .restaurants-card__float {
   position: absolute;
-  top: 14px;
+  top: 19px;
   right: 9px;
   color: #008766;
   background-color: #99E2d0;
   border-radius: 3px;
-  height: 8%;
-  width: 25%;
+  height: 10%;
+  width: 18%;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 8px;
 }
 .restaurants-card__block {
   display: flex;
