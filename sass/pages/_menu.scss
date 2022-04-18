@@ -1,0 +1,26 @@
+.menu {
+
+    position: relative;
+    z-index: 1;
+    box-sizing:content-box;
+
+    &__banner {
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    &__dishes {
+        top: 200px;
+        position: absolute;
+        z-index: 3;
+        background-color: $reservez-color;
+        width: 100%;
+        padding-left: $sideways-light-space;
+        padding-right: $sideways-light-space;
+        padding-top: $section-medium-space;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+
+}

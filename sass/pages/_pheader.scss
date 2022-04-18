@@ -1,8 +1,16 @@
 .pheader {
-
+    background-color: white;
+    margin: auto;
+        &__navbar {
+            display: flex;
+            padding-left: $sideways-light-space;
+            justify-content: space-between;
+            padding-right: 30%;
+        }
 }
 
-
-.menu__banner {
-    width: 100%;
+i.fas.fa-arrow-left {
+    font-size : 19px;
+    padding-top : 24px;
+    padding-right: 10px;
 }
