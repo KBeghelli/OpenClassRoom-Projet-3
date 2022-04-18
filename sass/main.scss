@@ -12,24 +12,9 @@
 @import "./base/breakpoints";
 @import "./pages/restaurants-cards";
   
-  .restaurants-card__container {
-    position: relative;
-  }
-  
-  .restaurants-card__float {
-    position: absolute;
-    top: 15px;
-    right: 65px;
-    background-color: #99E2D0;
-  }
-  
   .menu__banner {
     width: 300px;
     height: 220px;
   }
   
-  .restaurants__cards {
-    width:100%;
-    padding-left:0px;
-  }
   

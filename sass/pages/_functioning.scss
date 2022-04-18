@@ -2,11 +2,11 @@
     padding-left: $sideways-light-space;
     padding-right: $sideways-light-space;
     position: relative;
-    margin-bottom: $section-space;
+    margin-bottom: $section-medium-space;
 
     .main-page__title {
-        padding-top: $section-space;
-        padding-bottom: 10px;
+        padding-top: $section-medium-space;
+        padding-bottom: $section-light-space;
     }
 
     &__step {
@@ -14,8 +14,8 @@
         background-color: $reservez-color;
         display: flex;
         margin-bottom: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229,229,229,0);
     }
 

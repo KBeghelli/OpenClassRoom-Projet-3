@@ -1,14 +1,56 @@
 .restaurants {
     padding-left:$sideways-light-space;
     padding-right:$sideways-light-space;
+    background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(242,242,242,1) 48%, rgba(246,246,246,1) 100%);
+    &__cards {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width:100%;
+        padding-left:0px;
+    }
+}
+
+.main-page__title {
+    padding-top: $section-medium-space;
+    padding-bottom: $section-light-space;
 }
 
 .restaurants-card {
+
+    background-color:white;
+    margin-bottom: $section-light-space;
+    border-radius: 20px 20px 20px 20px;
+
+    &__container {
+        position: relative;
+    }
 
     &__image {
         object-fit: cover;
         width:100%;
         height: 200px;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    &__float {
+        position: absolute;
+        top: 14px;
+        right: 9px;
+        color: $nouveau-color;
+        background-color: $tertiary-color;
+        border-radius: 3px;
+        height: 8%;
+        width: 25%;
+        text-align: center;
+        padding-top: 3px;
+    }
+
+    &__block {
+        display:flex;
+        padding:3% 5%;
+    }
+
+    &__name {
+        padding-bottom:3px;
     }
 }
