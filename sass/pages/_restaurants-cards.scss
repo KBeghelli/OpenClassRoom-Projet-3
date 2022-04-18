@@ -7,6 +7,7 @@
         margin-bottom: 0px;
         width:100%;
         padding-left:0px;
+        padding-bottom: $section-medium-space;
     }
 }
 
@@ -40,17 +41,31 @@
         background-color: #99E2d0;
         border-radius: 3px;
         height: 10%;
-        width: 18%;
+        width: 25%;
         text-align: center;
-        padding-top: 8px;
+        padding-top: 5px;
     }
 
     &__block {
         display:flex;
         padding:3% 5%;
+        justify-content: space-between;
     }
 
     &__name {
         padding-bottom:3px;
     }
+}
+
+.zoom-img {
+    object-position: 50% 100%;
+}
+
+.zoom-img-note {
+    object-position: 50% 62%;
+}
+
+.fill-heart {
+    font-size: 23px;
+    padding-top: 8px;
 }

@@ -2,11 +2,31 @@
     padding-left: $sideways-light-space;
     padding-right: $sideways-light-space;
     background-color: $footer-color;
+    padding-bottom: $section-medium-space;
     a {
         color: white;
     }
 
+    &__logo {
+        padding-top: $section-light-space;
+        padding-bottom: $section-light-space;
+    }
+
     &__links {
-        padding-left: 0px;    
+        padding-left: 0px; 
+        margin-top: 0px;
+        margin-bottom: 0px;  
+    }
+
+    &__list {
+        padding-bottom: 10px;
+    }
+
+    &__i {
+        padding-right: 10px;
+    }
+
+    i.fas.fa-hands-helping {
+        font-size: 11px;
     }
 }
