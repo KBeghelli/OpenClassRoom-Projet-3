@@ -4,12 +4,14 @@ p, h1, h2, h3 {
 }
 
 ol { 
-    list-style-type: none;
-  }
+    list-style-type:none;
+}
   
-  li { display: block; }
+li { 
+    display: block; 
+  }
 
-  a {
+a {
     text-decoration: none;
     color: black;
   }

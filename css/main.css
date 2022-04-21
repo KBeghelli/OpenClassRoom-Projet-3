@@ -6,7 +6,6 @@
 .functioning {
   padding-left: 5%;
   padding-right: 5%;
-  position: relative;
   margin-bottom: 40px;
 }
 .functioning .main-page__title {
@@ -17,10 +16,11 @@
   border-radius: 15px;
   background-color: #f6f6f6;
   display: flex;
-  margin-bottom: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229, 229, 229, 0);
+  position: relative;
 }
 .functioning__step--different-color {
   background-color: #f5edff;
@@ -48,13 +48,13 @@
 .functioning__order {
   background-color: #9356DC;
   border-radius: 15px;
-  position: absolute;
-  left: 3.5%;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 1px;
   padding-bottom: 1px;
   color: white;
+  position: absolute;
+  left: -8px;
 }
 
 .showcase {
