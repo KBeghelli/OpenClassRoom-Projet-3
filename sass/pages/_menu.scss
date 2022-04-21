@@ -1,19 +1,7 @@
 .menu {
-
-    position: relative;
-    z-index: 1;
     box-sizing:content-box;
 
-    &__banner {
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-    }
-
-    &__dishes {
-        top: 200px;
-        position: absolute;
-        z-index: 3;
+    &__submenu {
         background-color: $reservez-color;
         width: 100%;
         padding-left: $sideways-light-space;

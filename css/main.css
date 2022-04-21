@@ -76,17 +76,6 @@
   margin-left: 15%;
   margin-right: 15%;
 }
-.showcase__button {
-  color: white;
-  margin-bottom: 10px;
-  background-color: #a25bdc;
-  border: solid 2px #a25bdc;
-  padding: 10px;
-  text-align: center;
-  display: inline-block;
-  margin-top: 15px;
-  border-radius: 20px;
-}
 
 .footer {
   padding-left: 5%;
@@ -256,25 +245,31 @@ a {
 }
 
 .menu {
-  position: relative;
-  z-index: 1;
   box-sizing: content-box;
 }
-.menu__banner {
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-}
-.menu__dishes {
-  top: 200px;
-  position: absolute;
-  z-index: 3;
+.menu__submenu {
   background-color: #f6f6f6;
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 40px;
   border-radius: 20px 20px 0px 0px;
+}
+
+.menu__banner {
+  width: 100%;
+}
+
+.main-button {
+  color: white;
+  margin-bottom: 10px;
+  background-color: #a25bdc;
+  border: solid 2px #a25bdc;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
