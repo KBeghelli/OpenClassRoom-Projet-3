@@ -4,8 +4,12 @@
     background-color: $explorer-bas-color;
     border: solid 2px $explorer-bas-color;
     padding: 10px;
-    text-align: center;
     display: inline-block;
     margin-top: 15px;
     border-radius: 20px;
+}
+
+.command-button-container {
+    text-align: center;
+    background-color: $reservez-color;
 }

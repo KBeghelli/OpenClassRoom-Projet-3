@@ -3,11 +3,15 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-.header__logo, .footer__logo, .menu__header__name {
+.header__logo, .footer__logo, .menu__header__name, .restaurant-name {
     font-family: 'Shrikhand', cursive;
 }
 
-h1, h2, h3 {
+h1, h2 {
+    font-size: 24px;
+}
+
+h3 {
     font-size: 19px;
 }
 
