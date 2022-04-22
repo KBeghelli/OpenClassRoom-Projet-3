@@ -113,23 +113,26 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 26px;
+  width: 100%;
 }
 
 .pheader {
   background-color: white;
   margin: auto;
+  position: relative;
 }
 .pheader__navbar {
   display: flex;
   padding-left: 5%;
-  justify-content: space-between;
-  padding-right: 30%;
+  /*justify-content: space-between;*/
+  /*padding-right: 30%;*/
 }
 
 i.fas.fa-arrow-left {
   font-size: 19px;
   padding-top: 24px;
   padding-right: 10px;
+  position: absolute;
 }
 
 .location {
