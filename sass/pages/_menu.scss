@@ -1,5 +1,5 @@
 .menu {
-    box-sizing:content-box;
+    box-sizing: content-box;
 
     &__submenu {
         width: 100%;
@@ -7,10 +7,10 @@
         padding-right: $sideways-light-space;
 
         .underline-title {
-        text-transform: uppercase;
-        position: relative;
-        padding-bottom: 22px;
-        padding-top: $section-medium-space;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 22px;
+            padding-top: $section-medium-space;
 
             .underline {
                 position: absolute;
@@ -36,6 +36,48 @@
     border-radius: 10px;
     display: flex;
     margin-bottom: $submenu-smaller-space;
-    padding: $sideways-light-space;
+    padding-left: $sideways-light-space;
+    justify-content: space-between;
 
+    .plate__info {
+        padding-top: $sideways-light-space;
+        padding-bottom: $sideways-light-space;
+    }
+
+    .plate__title {
+        padding-bottom: 5px;
+    }
+
+    .plate__price {
+        display: flex;
+        align-items: flex-end;
+        padding-top: $sideways-light-space;
+        padding-bottom: $sideways-light-space;
+        padding-right: $sideways-light-space;
+    }
+
+    .plate__validation {
+        display: none;
+    }
+
+    .plate:hover {
+        background-color: red;
+    }
+}
+
+.plate:hover {
+
+    justify-content:center;
+
+    .plate__validation {
+        display: block;
+        background-color: $tertiary-color;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: $sideways-light-space;
+        padding-bottom: $sideways-light-space;
+        border-radius: 0px 10px 10px 0px;
+    }
 }

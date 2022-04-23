@@ -284,7 +284,43 @@ a {
   border-radius: 10px;
   display: flex;
   margin-bottom: 15px;
-  padding: 5%;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+.plate .plate__info {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.plate .plate__title {
+  padding-bottom: 5px;
+}
+.plate .plate__price {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}
+.plate .plate__validation {
+  display: none;
+}
+.plate .plate:hover {
+  background-color: red;
+}
+
+.plate:hover {
+  justify-content: center;
+}
+.plate:hover .plate__validation {
+  display: block;
+  background-color: #99E2d0;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .menu__banner {
