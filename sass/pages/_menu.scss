@@ -5,9 +5,22 @@
         width: 100%;
         padding-left: $sideways-light-space;
         padding-right: $sideways-light-space;
+
+        .underline-title {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 22px;
+        padding-top: $section-medium-space;
+
+            .underline {
+                position: absolute;
+                background-color: $tertiary-color;
+                width: 45px;
+                height: 4px;
+                top: 63px;
+            }
+        }
     }
-
-
 }
 
 .menu-page {
@@ -16,4 +29,13 @@
     z-index: 1;
     position: relative;
     margin-top: -4rem;
+}
+
+.plate {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: $submenu-smaller-space;
+    padding: $sideways-light-space;
+
 }
