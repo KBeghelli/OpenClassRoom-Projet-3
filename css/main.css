@@ -163,6 +163,7 @@ h3 {
 
 * {
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 p, h1, h2, h3, h4 {
@@ -290,6 +291,7 @@ a {
 .plate .plate__info {
   padding-top: 5%;
   padding-bottom: 5%;
+  width: 80%;
 }
 .plate .plate__title {
   padding-bottom: 5px;
@@ -309,7 +311,7 @@ a {
 }
 
 .plate:hover {
-  justify-content: center;
+  justify-content: start;
 }
 .plate:hover .plate__validation {
   display: block;

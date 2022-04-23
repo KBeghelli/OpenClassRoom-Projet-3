@@ -42,6 +42,7 @@
     .plate__info {
         padding-top: $sideways-light-space;
         padding-bottom: $sideways-light-space;
+        width: 80%;
     }
 
     .plate__title {
@@ -67,7 +68,7 @@
 
 .plate:hover {
 
-    justify-content:center;
+    justify-content:start;
 
     .plate__validation {
         display: block;
