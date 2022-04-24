@@ -15,3 +15,12 @@ $sideways-light-space: 5%;
 $section-medium-space: 40px;
 $section-light-space: 20px;
 $submenu-smaller-space: 15px;
+
+/* Breakpoints */
+$tablet: 768px;
+$desktop: 991px;
+
+$breakpoints: (
+  'tablet':  767px,
+  'desktop': 992px,
+) !default;

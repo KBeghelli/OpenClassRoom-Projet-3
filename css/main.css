@@ -3,6 +3,11 @@
 /* meme couleur que commande p2 */
 /*reservez // carte p2*/
 /* variables pour les paddings/margin */
+/* Breakpoints */
+/* Mixin for Breakpoints */
+/* @include respond-to('tablet') {
+      background-color: blue;
+    } */
 .functioning {
   padding-left: 5%;
   padding-right: 5%;
@@ -114,6 +119,11 @@
   padding-bottom: 20px;
   font-size: 26px;
   width: 100%;
+}
+@media (min-width: 767px) {
+  .header__logo {
+    background-color: blue;
+  }
 }
 
 .pheader {
