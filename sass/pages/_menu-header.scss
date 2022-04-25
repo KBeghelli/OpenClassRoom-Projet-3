@@ -1,6 +1,11 @@
 .menu {
     &__banner {
         width: 100%;
+
+        @include respond-to('desktop') {
+        height: 500px;
+        object-fit: cover;
+        }
     }
 }
 
@@ -10,6 +15,5 @@
     padding-right: $sideways-light-space;
     justify-content: space-between;
     padding-top: $section-medium-space;
-    /*padding-bottom: $section-medium-space;*/
     align-items: center;
 }

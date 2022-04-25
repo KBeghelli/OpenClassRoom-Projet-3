@@ -1,6 +1,13 @@
 .menu {
     box-sizing: content-box;
 
+    &__dishes-list {
+        @include respond-to('desktop') {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__submenu {
         width: 100%;
         padding-left: $sideways-light-space;
@@ -29,6 +36,9 @@
     z-index: 1;
     position: relative;
     margin-top: -4rem;
+    @include respond-to('tablet') {
+        border-radius: 60px 60px 0px 0px;
+    }
 }
 
 .plate {
@@ -39,10 +49,25 @@
     padding-left: $sideways-light-space;
     justify-content: space-between;
 
+    @include respond-to('desktop') {
+        width: 30%;
+        padding-left: 3%;
+    }
+
     .plate__info {
         padding-top: $sideways-light-space;
         padding-bottom: $sideways-light-space;
         width: 80%;
+
+        @include respond-to('tablet') {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        @include respond-to('desktop') {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
     }
 
     .plate__title {
@@ -55,6 +80,11 @@
         padding-top: $sideways-light-space;
         padding-bottom: $sideways-light-space;
         padding-right: $sideways-light-space;
+
+        @include respond-to('desktop') {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
     }
 
     .plate__validation {
@@ -80,5 +110,10 @@
         padding-top: $sideways-light-space;
         padding-bottom: $sideways-light-space;
         border-radius: 0px 10px 10px 0px;
+
+        @include respond-to('desktop') {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
     }
 }

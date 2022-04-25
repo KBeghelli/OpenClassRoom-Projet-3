@@ -7,7 +7,7 @@ html {
     }
 
     @include respond-to('desktop') {
-        font-size : 12px;
+        font-size : 14px;
     }
 }
 
@@ -23,7 +23,7 @@ h1, h2 {
     }
 
     @include respond-to('desktop') {
-        font-size : 21px;
+        font-size : 23px;
     }
 }
 
@@ -35,7 +35,7 @@ h3 {
     }
 
     @include respond-to('desktop') {
-        font-size : 14px;
+        font-size : 16px;
     }
 }
 
@@ -47,7 +47,7 @@ h4 {
     }
 
     @include respond-to('desktop') {
-        font-size : 13px;
+        font-size : 15px;
     }
 }
 
