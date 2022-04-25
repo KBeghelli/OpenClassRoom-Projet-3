@@ -3,7 +3,7 @@ html {
     font-family: 'Roboto', sans-serif;
     
     @include respond-to('tablet') {
-        font-size : 14px;
+        font-size : 17px;
     }
 
     @include respond-to('desktop') {
@@ -19,7 +19,7 @@ h1, h2 {
     font-size: 24px;
 
     @include respond-to('tablet') {
-        font-size : 23px;
+        font-size : 26px;
     }
 
     @include respond-to('desktop') {
@@ -31,11 +31,23 @@ h3 {
     font-size: 17px;
 
     @include respond-to('tablet') {
-        font-size : 16px;
+        font-size : 19px;
     }
 
     @include respond-to('desktop') {
         font-size : 14px;
+    }
+}
+
+h4 {
+    font-size: 16px;
+
+    @include respond-to('tablet') {
+        font-size : 18px;
+    }
+
+    @include respond-to('desktop') {
+        font-size : 13px;
     }
 }
 

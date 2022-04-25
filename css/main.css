@@ -205,7 +205,7 @@ html {
 }
 @media (min-width: 767px) {
   html {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 @media (min-width: 992px) {
@@ -223,7 +223,7 @@ h1, h2 {
 }
 @media (min-width: 767px) {
   h1, h2 {
-    font-size: 23px;
+    font-size: 26px;
   }
 }
 @media (min-width: 992px) {
@@ -237,12 +237,26 @@ h3 {
 }
 @media (min-width: 767px) {
   h3 {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 @media (min-width: 992px) {
   h3 {
     font-size: 14px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+@media (min-width: 767px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  h4 {
+    font-size: 13px;
   }
 }
 
@@ -438,7 +452,7 @@ a {
 
 .main-button {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: #a25bdc;
   border: solid 2px #a25bdc;
   padding: 10px;
