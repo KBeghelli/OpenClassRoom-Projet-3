@@ -17,6 +17,18 @@
         padding-bottom: 20px;
         box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229,229,229,0);
         position:relative;
+
+        @include respond-to('tablet') {
+            width: 44%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @include respond-to('desktop') {
+            width: 30%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     &__step--different-color {
@@ -25,6 +37,16 @@
 
     &__list {
         padding-left: 8px;
+
+        @include respond-to('tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include respond-to('desktop') {
+            flex-wrap: nowrap;
+        }
     }
 
     &__icon {
@@ -50,13 +72,13 @@
     &__order {
         background-color: $primary-color;
         border-radius: 15px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         color: white;
         position: absolute;
-        left: -8px;
+        left: -11px;
     }
 
 }

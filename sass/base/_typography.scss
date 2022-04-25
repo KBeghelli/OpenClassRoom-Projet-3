@@ -1,6 +1,14 @@
 html {
     font-size : 15px;
     font-family: 'Roboto', sans-serif;
+    
+    @include respond-to('tablet') {
+        font-size : 14px;
+    }
+
+    @include respond-to('desktop') {
+        font-size : 12px;
+    }
 }
 
 .header__logo, .footer__logo, .menu__header__name, .restaurant-name {
@@ -9,10 +17,26 @@ html {
 
 h1, h2 {
     font-size: 24px;
+
+    @include respond-to('tablet') {
+        font-size : 23px;
+    }
+
+    @include respond-to('desktop') {
+        font-size : 21px;
+    }
 }
 
 h3 {
     font-size: 17px;
+
+    @include respond-to('tablet') {
+        font-size : 16px;
+    }
+
+    @include respond-to('desktop') {
+        font-size : 14px;
+    }
 }
 
 * {

@@ -10,16 +10,29 @@
     &__logo {
         padding-top: $section-light-space;
         padding-bottom: $section-light-space;
+
+        @include respond-to('tablet') {
+            text-align: center;
+            padding-top: $section-medium-space;
+            padding-bottom: $section-medium-space;
+        }
     }
 
     &__links {
         padding-left: 0px; 
         margin-top: 0px;
         margin-bottom: 0px;  
+        
+        @include respond-to('tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__list {
         padding-bottom: 10px;
+
     }
 
     &__i {

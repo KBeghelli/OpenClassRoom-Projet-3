@@ -8,6 +8,12 @@
         width:100%;
         padding-left:0px;
         padding-bottom: $section-medium-space;
+
+        @include respond-to('tablet') {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -21,7 +27,11 @@
     background-color:white;
     margin-bottom: $section-light-space;
     border-radius: 20px 20px 20px 20px;
-    /*position: relative;  ajouttest*/
+
+    @include respond-to('tablet') {
+        width: 49%;
+        display: inline-block;
+    }
 
     &__container {
         position: relative;
