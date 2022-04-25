@@ -143,6 +143,16 @@
 .footer__list {
   padding-bottom: 10px;
 }
+@media (min-width: 767px) {
+  .footer__list {
+    width: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .footer__list {
+    width: 12%;
+  }
+}
 .footer__i {
   padding-right: 10px;
 }
@@ -160,16 +170,6 @@
   font-size: 26px;
   width: 100%;
 }
-@media (min-width: 767px) {
-  .header__logo {
-    background-color: blue;
-  }
-}
-@media (min-width: 992px) {
-  .header__logo {
-    background-color: yellow;
-  }
-}
 
 .pheader {
   background-color: white;
@@ -180,11 +180,27 @@
   display: flex;
   padding-left: 5%;
 }
+@media (min-width: 767px) {
+  .pheader__navbar {
+    padding-left: 0px;
+  }
+}
 
 i.fas.fa-arrow-left {
   font-size: 24px;
   position: absolute;
   padding: 23px;
+}
+@media (min-width: 767px) {
+  i.fas.fa-arrow-left {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+i.fas.fa-arrow-left:hover {
+  background-color: #99E2d0;
 }
 
 .location {
@@ -305,6 +321,7 @@ a {
 .main-page__title {
   padding-top: 40px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .restaurants-card {
@@ -391,6 +408,7 @@ a {
   width: 45px;
   height: 4px;
   top: 63px;
+  left: 0px;
 }
 
 .menu-page {
