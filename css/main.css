@@ -552,4 +552,12 @@ a {
   background-color: #f6f6f6;
 }
 
+/* Animation pour le hover du submenu pour page-rest */
+.fas.fa-check {
+  background-color: white;
+  border-radius: 100px;
+  padding: 4px;
+  color: #99E2d0;
+}
+
 /*# sourceMappingURL=main.css.map */
