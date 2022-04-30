@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* variables pour la couleur */
 /*backcolor nouveau // boutonp2 // bordureentree*/
 /* meme couleur que commande p2 */
@@ -200,7 +201,7 @@ i.fas.fa-arrow-left {
   }
 }
 i.fas.fa-arrow-left:hover {
-  background-color: #99E2d0;
+  color: #9356DC;
 }
 
 .location {
@@ -552,12 +553,53 @@ a {
   background-color: #f6f6f6;
 }
 
-/* Animation pour le hover du submenu pour page-rest */
+/* Animation pour le hover du submenu pour page-rest / créer une deuxième icone ?*/
+/*.plate__validation {
+    position:relative;
+}*/
 .fas.fa-check {
   background-color: white;
   border-radius: 100px;
   padding: 4px;
   color: #99E2d0;
+  transform: translateX(50%) rotate(180deg);
+  transition: transform 500ms linear;
+  /*position:absolute;
+  right: 0%;*/
+}
+
+.plate:hover .fas.fa-check {
+  transform: translateX(0%) rotate(360deg);
+  transition: transform 500ms linear;
+}
+
+/* Coeur qui se remplissent */
+.fill-heart {
+  position: relative;
+}
+
+.far.fa-heart {
+  position: absolute;
+  opacity: 1;
+  right: 20px;
+  bottom: 12px;
+  transition: opacity 1s ease-in-out;
+}
+
+.fas.fa-heart {
+  position: absolute;
+  opacity: 0;
+  color: #FF79DA;
+  right: 20px;
+  bottom: 12px;
+  transition: opacity 1s ease-in-out;
+}
+
+.fill-heart:hover .fas.fa-heart, .fill-heart:active .fas.fa-heart {
+  opacity: 1;
+}
+.fill-heart:hover .far.fa-heart, .fill-heart:active .far.fa-heart {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,56 @@
-/* Animation pour le hover du submenu pour page-rest */
+/* Animation pour le hover du submenu pour page-rest / créer une deuxième icone ?*/
+/*.plate__validation {
+    position:relative;
+}*/
 
 .fas.fa-check {
     background-color: white;
     border-radius: 100px;
     padding: 4px;
     color: $tertiary-color;
+    transform: translateX(50%) rotate(180deg);
+    transition: transform 500ms linear;
+    /*position:absolute;
+    right: 0%;*/
+}
+
+.plate:hover{
+    
+    .fas.fa-check {
+    transform: translateX(0%) rotate(360deg); 
+    transition: transform 500ms linear;
+    }
+}
+
+/* Coeur qui se remplissent */
+
+.fill-heart {
+    position:relative;
+}
+
+.far.fa-heart {
+    position:absolute;
+    opacity:1;
+    right: 20px;
+    bottom: 12px;
+    transition: opacity 1s ease-in-out;
+}
+
+.fas.fa-heart {
+    position:absolute;
+    opacity:0;
+    color:$secondary-color;
+    right: 20px;
+    bottom: 12px;
+    transition: opacity 1s ease-in-out;
+}
+
+.fill-heart:hover, .fill-heart:active {
+    .fas.fa-heart {
+        opacity:1;
+    }
+
+    .far.fa-heart {
+        opacity:0;
+    }
 }
