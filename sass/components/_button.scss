@@ -1,12 +1,18 @@
 .main-button {
     color: white;
     margin-bottom: $section-light-space;
-    background-color: $explorer-bas-color;
-    border: solid 2px $explorer-bas-color;
     padding: 10px;
     display: inline-block;
     margin-top: 15px;
     border-radius: 20px;
+    background-image: linear-gradient(to top,
+            rgba(147, 86, 220, 1) 0%,
+            rgba(179, 92, 220, 1) 25%,
+            rgba(207, 100, 220, 1) 50%,
+            rgba(232, 110, 219, 1) 75%,
+            rgba(255, 121, 218, 1) 100%);
+    box-shadow: 0px 4px 10px rgba(197,197,197,1);
+
 
     @include respond-to('desktop') {
         margin-top: $section-medium-space;

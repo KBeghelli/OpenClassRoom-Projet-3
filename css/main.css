@@ -534,12 +534,12 @@ a {
 .main-button {
   color: white;
   margin-bottom: 20px;
-  background-color: #a25bdc;
-  border: solid 2px #a25bdc;
   padding: 10px;
   display: inline-block;
   margin-top: 15px;
   border-radius: 20px;
+  background-image: linear-gradient(to top, rgb(147, 86, 220) 0%, rgb(179, 92, 220) 25%, rgb(207, 100, 220) 50%, rgb(232, 110, 219) 75%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 4px 10px rgb(197, 197, 197);
 }
 @media (min-width: 1100px) {
   .main-button {
@@ -595,11 +595,21 @@ a {
   transition: opacity 1s ease-in-out;
 }
 
-.fill-heart:hover .fas.fa-heart, .fill-heart:active .fas.fa-heart {
+.fill-heart:hover .fas.fa-heart,
+.fill-heart:active .fas.fa-heart {
   opacity: 1;
 }
-.fill-heart:hover .far.fa-heart, .fill-heart:active .far.fa-heart {
+.fill-heart:hover .far.fa-heart,
+.fill-heart:active .far.fa-heart {
   opacity: 0;
+}
+
+/* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. */
+/* Ici uniquement ce qui affecte le hover, les propriétés du bouton à l'état inactif se trouvent dans button.scss */
+.main-button:hover {
+  background-image: linear-gradient(to top, #a16be0 0%, #bd71e1 25%, #d579e1 50%, #eb84e0 75%, #ff93e1 100%);
+  box-shadow: 0px 4px 10px #9f9f9f;
+  transition-duration: 0.25s;
 }
 
 /*# sourceMappingURL=main.css.map */

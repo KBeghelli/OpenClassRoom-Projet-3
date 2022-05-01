@@ -14,43 +14,58 @@
     right: 0%;*/
 }
 
-.plate:hover{
-    
+.plate:hover {
+
     .fas.fa-check {
-    transform: translateX(0%) rotate(360deg); 
-    transition: transform 500ms linear;
+        transform: translateX(0%) rotate(360deg);
+        transition: transform 500ms linear;
     }
 }
 
 /* Coeur qui se remplissent */
 
 .fill-heart {
-    position:relative;
+    position: relative;
 }
 
 .far.fa-heart {
-    position:absolute;
-    opacity:1;
+    position: absolute;
+    opacity: 1;
     right: 20px;
     bottom: 12px;
     transition: opacity 1s ease-in-out;
 }
 
 .fas.fa-heart {
-    position:absolute;
-    opacity:0;
-    color:$secondary-color;
+    position: absolute;
+    opacity: 0;
+    color: $secondary-color;
     right: 20px;
     bottom: 12px;
     transition: opacity 1s ease-in-out;
 }
 
-.fill-heart:hover, .fill-heart:active {
+.fill-heart:hover,
+.fill-heart:active {
     .fas.fa-heart {
-        opacity:1;
+        opacity: 1;
     }
 
     .far.fa-heart {
-        opacity:0;
+        opacity: 0;
     }
+}
+
+/* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. */
+/* Ici uniquement ce qui affecte le hover, les propriétés du bouton à l'état inactif se trouvent dans button.scss */
+
+.main-button:hover {
+    background-image: linear-gradient(to top,
+            lighten(rgba(147, 86, 220, 1), 5%) 0%,
+            lighten(rgba(179, 92, 220, 1), 5%) 25%,
+            lighten(rgba(207, 100, 220, 1), 5%) 50%,
+            lighten(rgba(232, 110, 219, 1), 5%) 75%,
+            lighten(rgba(255, 121, 218, 1), 5%) 100%);
+    box-shadow: 0px 4px 10px darken(rgba(197,197,197,1), 15%);
+    transition-duration: 0.25s;
 }
