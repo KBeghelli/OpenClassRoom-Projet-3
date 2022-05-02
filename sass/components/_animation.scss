@@ -93,49 +93,61 @@ décalage dans le temps. Ils pourront soit apparaître un par un, soit par group
 “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni. */
 
 .FadeIn-A {
-    animation: fadein 0.5s;
+    animation: fadein 1s ease 0s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-A1 {
-    animation: fadein 1.25s;
+    animation: fadein 1s ease 0.75s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-A2 {
-    animation: fadein 1.5s;
+    animation: fadein 1s ease 1s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-A3 {
-    animation: fadein 1.75s;
+    animation: fadein 1s ease 1.25s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-B {
-    animation: fadein 2.5s;
+    animation: fadein 1s ease 2s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-B1 {
-    animation: fadein 3.25s;
+    animation: fadein 1s ease 2.75s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-B2 {
-    animation: fadein 3.5s;
+    animation: fadein 1s ease 3s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-B3 {
-    animation: fadein 3.75s;
+    animation: fadein 1s ease 3.25s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-C {
-    animation: fadein 4.5s;
+    animation: fadein 1s ease 4s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-C1 {
-    animation: fadein 5.25s;
+    animation: fadein 1s ease 4.75s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-C2 {
-    animation: fadein 5.5s;
+    animation: fadein 1s ease 5s 1 normal;
+    animation-fill-mode: both;
 }
 
 .FadeIn-C3 {
-    animation: fadein 5.75s;
+    animation: fadein 1s ease 5.25s 1 normal;
+    animation-fill-mode: both;
 }
