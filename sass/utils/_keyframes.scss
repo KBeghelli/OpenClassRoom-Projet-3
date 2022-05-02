@@ -1,4 +1,4 @@
-/* Keyframes pour le loading-spinner */
+/* Animation N°3 : Loading Spinner */
 @keyframes rotate {
     from{
       -webkit-transform: rotate(0deg);
@@ -12,23 +12,32 @@
     0% {
       opacity: 1;
     }
-    50% {
-      opacity: 0.5;
-    }
+    
     100% {
       opacity: 0;
     }
   }
 
-/*Keyframes pour l'apparition progresse sur la page-rest */
+/* Animation N°4 : Keyframes pour l'apparition progresse sur la page-rest */
 
 @keyframes fadein {
     from {
         opacity:0;
-        /*scale:(0)*/
     }
     to {
         opacity:1;
-        /*scale: (1);*/
     }
+}
+
+/* Animation N°5 : Apparition d'un bouton */
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(20px) rotate(360deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
 }

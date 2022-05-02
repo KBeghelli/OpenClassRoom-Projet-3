@@ -59,6 +59,7 @@
     margin-bottom: $submenu-smaller-space;
     padding-left: $sideways-light-space;
     justify-content: space-between;
+    transition-duration: 0.5s;
 
     @include respond-to('desktop') {
         width: 30%;

@@ -1,7 +1,4 @@
 /* Animation pour le hover du submenu pour page-rest / créer une deuxième icone ?*/
-/*.plate__validation {
-    position:relative;
-}*/
 
 .fas.fa-check {
     background-color: white;
@@ -12,20 +9,6 @@
     padding-left: 4px;
     color: $tertiary-color;
     animation: myAnim 1s ease 0s 1 normal forwards;
-    /*position:absolute;
-    right: 0%;*/
-}
-
-@keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateX(20px) rotate(360deg);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0) rotate(0deg);
-	}
 }
 
 .plate:hover {
@@ -36,7 +19,10 @@
     }
 }
 
-/* Coeur qui se remplissent */
+/* À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
+remplir progressivement. Pour cette première version, l’effet peut être apparaître au
+survol sur desktop au lieu du clic. */
 
 .fill-heart {
     position: relative;
@@ -74,8 +60,8 @@
     line-height: 0px;
 }
 
-/* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. */
-/* Ici uniquement ce qui affecte le hover, les propriétés du bouton à l'état inactif se trouvent dans button.scss */
+/* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+L’ombre portée devra également être plus visible.*/
 
 .main-button:hover {
     background-image: linear-gradient(to top,
