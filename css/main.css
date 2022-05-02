@@ -627,6 +627,57 @@ a {
   transition-duration: 0.25s;
 }
 
+/* À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
+décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
+“Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni. */
+.FadeIn-A {
+  animation: fadein 0.5s;
+}
+
+.FadeIn-A1 {
+  animation: fadein 1.25s;
+}
+
+.FadeIn-A2 {
+  animation: fadein 1.5s;
+}
+
+.FadeIn-A3 {
+  animation: fadein 1.75s;
+}
+
+.FadeIn-B {
+  animation: fadein 2.5s;
+}
+
+.FadeIn-B1 {
+  animation: fadein 3.25s;
+}
+
+.FadeIn-B2 {
+  animation: fadein 3.5s;
+}
+
+.FadeIn-B3 {
+  animation: fadein 3.75s;
+}
+
+.FadeIn-C {
+  animation: fadein 4.5s;
+}
+
+.FadeIn-C1 {
+  animation: fadein 5.25s;
+}
+
+.FadeIn-C2 {
+  animation: fadein 5.5s;
+}
+
+.FadeIn-C3 {
+  animation: fadein 5.75s;
+}
+
 .loader {
   background: linear-gradient(to top, rgb(147, 86, 220) 0%, rgb(179, 92, 220) 25%, rgb(207, 100, 220) 50%, rgb(232, 110, 219) 75%, rgb(255, 121, 218) 100%);
   width: 100%;
@@ -685,10 +736,12 @@ a {
 /*Keyframes pour l'apparition progresse sur la page-rest */
 @keyframes fadein {
   from {
-    opacity: 0;
+    /*opacity:0;*/
+    scale: 0;
   }
   to {
-    opacity: 1;
+    /*opacity:1;*/
+    scale: 1;
   }
 }
 
