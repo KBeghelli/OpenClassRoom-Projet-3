@@ -571,14 +571,26 @@ a {
 .fas.fa-check {
   background-color: white;
   border-radius: 100px;
-  padding: 4px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-right: 5px;
+  padding-left: 4px;
   color: #99E2d0;
-  transform: translateX(50%) rotate(180deg);
-  transition: transform 500ms linear;
+  animation: myAnim 1s ease 0s 1 normal forwards;
   /*position:absolute;
   right: 0%;*/
 }
 
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(20px) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
 .plate:hover .fas.fa-check {
   transform: translateX(0%) rotate(360deg);
   transition: transform 500ms linear;
@@ -736,12 +748,12 @@ décalage dans le temps. Ils pourront soit apparaître un par un, soit par group
 /*Keyframes pour l'apparition progresse sur la page-rest */
 @keyframes fadein {
   from {
-    /*opacity:0;*/
-    scale: 0;
+    opacity: 0;
+    /*scale:(0)*/
   }
   to {
-    /*opacity:1;*/
-    scale: 1;
+    opacity: 1;
+    /*scale: (1);*/
   }
 }
 
