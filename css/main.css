@@ -99,8 +99,8 @@
   background-color: #f6f6f6;
 }
 .showcase__title {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 19%;
+  margin-right: 19%;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -213,6 +213,9 @@ i.fas.fa-arrow-left:hover {
 .location p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.location__icon {
+  margin-right: 10px;
 }
 
 html {
@@ -359,7 +362,6 @@ a {
   border-radius: 3px;
   padding: 0.5rem;
   text-align: center;
-  padding-top: 5px;
 }
 .restaurants-card__block {
   display: flex;
@@ -455,6 +457,9 @@ a {
   padding-top: 5%;
   padding-bottom: 5%;
   width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media (min-width: 767px) {
   .plate .plate__info {
@@ -470,13 +475,19 @@ a {
 }
 .plate .plate__title {
   padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plate .plate__description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .plate .plate__price {
   display: flex;
   align-items: flex-end;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-right: 5%;
+  padding: 5%;
 }
 @media (min-width: 1100px) {
   .plate .plate__price {
@@ -604,12 +615,81 @@ a {
   opacity: 0;
 }
 
+.fa-stack {
+  line-height: 0px;
+}
+
 /* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. */
 /* Ici uniquement ce qui affecte le hover, les propriétés du bouton à l'état inactif se trouvent dans button.scss */
 .main-button:hover {
   background-image: linear-gradient(to top, #a16be0 0%, #bd71e1 25%, #d579e1 50%, #eb84e0 75%, #ff93e1 100%);
   box-shadow: 0px 4px 10px #9f9f9f;
   transition-duration: 0.25s;
+}
+
+.loader {
+  background: linear-gradient(to top, rgb(147, 86, 220) 0%, rgb(179, 92, 220) 25%, rgb(207, 100, 220) 50%, rgb(232, 110, 219) 75%, rgb(255, 121, 218) 100%);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: 26px;
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 2s forwards;
+}
+
+.loader__food {
+  vertical-align: middle;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+}
+
+.loader__food span {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
+}
+
+.loader__fork {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 47.5%;
+  animation: rotate 1s linear infinite;
+}
+
+/* Keyframes pour le loading-spinner */
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*Keyframes pour l'apparition progresse sur la page-rest */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

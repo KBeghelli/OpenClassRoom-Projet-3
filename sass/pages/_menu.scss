@@ -46,6 +46,7 @@
     z-index: 1;
     position: relative;
     margin-top: -4rem;
+
     @include respond-to('tablet') {
         border-radius: 60px 60px 0px 0px;
     }
@@ -69,6 +70,9 @@
         padding-top: $sideways-light-space;
         padding-bottom: $sideways-light-space;
         width: 80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         @include respond-to('tablet') {
             padding-top: 3%;
@@ -83,14 +87,21 @@
 
     .plate__title {
         padding-bottom: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .plate__description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .plate__price {
         display: flex;
         align-items: flex-end;
-        padding-top: $sideways-light-space;
-        padding-bottom: $sideways-light-space;
-        padding-right: $sideways-light-space;
+        padding: $sideways-light-space;
 
         @include respond-to('desktop') {
             padding-top: 3%;
@@ -109,7 +120,7 @@
 
 .plate:hover {
 
-    justify-content:start;
+    justify-content: start;
 
     .plate__validation {
         display: block;

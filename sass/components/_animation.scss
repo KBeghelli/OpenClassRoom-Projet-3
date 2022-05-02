@@ -56,6 +56,10 @@
     }
 }
 
+.fa-stack {
+    line-height: 0px;
+}
+
 /* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. */
 /* Ici uniquement ce qui affecte le hover, les propriétés du bouton à l'état inactif se trouvent dans button.scss */
 
