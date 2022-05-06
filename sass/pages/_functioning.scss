@@ -3,6 +3,10 @@
     padding-right: $sideways-light-space;
     margin-bottom: $section-medium-space;
 
+    @include respond-to('desktop') {
+        margin-bottom: 0px;
+    }
+
     .main-page__title {
         padding-top: $section-medium-space;
         padding-bottom: $section-light-space;
@@ -79,6 +83,11 @@
         color: white;
         position: absolute;
         left: -11px;
+
+        @include respond-to('desktop') {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
     }
 
 }

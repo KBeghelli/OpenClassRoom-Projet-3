@@ -7,6 +7,10 @@
     padding-bottom: $section-medium-space;
     background-color: $reservez-color;
 
+    @include respond-to('desktop') {
+        padding-bottom: 0px;
+    }
+
     &__title {
         margin-left: 19%;
         margin-right: 19%;
