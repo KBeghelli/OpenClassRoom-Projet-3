@@ -1,7 +1,6 @@
 .main-button {
     color: white;
-    margin-bottom: $section-light-space;
-    padding: 10px;
+    padding: 12px 32px;
     display: inline-block;
     margin-top: 15px;
     border-radius: 20px;
@@ -23,4 +22,8 @@
 .command-button-container {
     text-align: center;
     background-color: $reservez-color;
+}
+
+.main-button--bottom-space {
+    margin-bottom: 60px;
 }

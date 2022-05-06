@@ -1,7 +1,7 @@
 .functioning {
     padding-left: $sideways-light-space;
     padding-right: $sideways-light-space;
-    margin-bottom: $section-medium-space;
+    margin-bottom: 60px;
 
     @include respond-to('desktop') {
         margin-bottom: 0px;
