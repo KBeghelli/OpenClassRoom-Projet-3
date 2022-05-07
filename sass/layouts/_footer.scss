@@ -3,6 +3,7 @@
     padding-right: $sideways-light-space;
     background-color: $footer-color;
     padding-bottom: $section-medium-space;
+
     a {
         color: white;
     }
@@ -19,10 +20,10 @@
     }
 
     &__links {
-        padding-left: 0px; 
+        padding-left: 0px;
         margin-top: 0px;
-        margin-bottom: 0px;  
-        
+        margin-bottom: 0px;
+
         @include respond-to('tablet') {
             display: flex;
             flex-wrap: wrap;
@@ -32,21 +33,10 @@
 
     &__list {
         padding-bottom: 10px;
-
-        @include respond-to('tablet') {
-            width: 35%;
-        }
-
-        @include respond-to('desktop') {
-            width: 15%;
-        }
     }
 
     &__i {
         padding-right: 10px;
     }
 
-    i.fas.fa-hands-helping {
-        font-size: 11px;
-    }
 }

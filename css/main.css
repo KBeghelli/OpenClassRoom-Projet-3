@@ -67,8 +67,14 @@
 }
 .functioning__icon {
   padding-left: 40px;
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 2px;
+  color: #7e7e7e;
+}
+@media (min-width: 992px) {
+  .functioning__icon {
+    padding-left: 10%;
+  }
 }
 .functioning i.fas.fa-solid.fa-store {
   color: #9356DC;
@@ -81,6 +87,11 @@
   padding-left: 15%;
   padding-right: 0%;
   font-weight: bold;
+}
+@media (min-width: 992px) {
+  .functioning__text {
+    padding-left: 5%;
+  }
 }
 .functioning__order {
   background-color: #9356DC;
@@ -160,21 +171,8 @@
 .footer__list {
   padding-bottom: 10px;
 }
-@media (min-width: 767px) {
-  .footer__list {
-    width: 35%;
-  }
-}
-@media (min-width: 992px) {
-  .footer__list {
-    width: 15%;
-  }
-}
 .footer__i {
   padding-right: 10px;
-}
-.footer i.fas.fa-hands-helping {
-  font-size: 11px;
 }
 
 .header__logo {
@@ -532,8 +530,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
   border-radius: 0px 10px 10px 0px;
 }
 @media (min-width: 1100px) {
@@ -587,24 +583,15 @@ a {
   margin-bottom: 60px;
 }
 
-/* Animation pour le hover du submenu pour page-rest / créer une deuxième icone ?*/
-.fas.fa-check {
-  background-color: white;
-  border-radius: 100px;
-  padding-top: 5px;
-  padding-bottom: 4px;
-  padding-right: 5px;
-  padding-left: 4px;
-  color: #99E2d0;
-  animation: myAnim 1s ease 0s 1 normal forwards;
+/* Animation N°1 : Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+L’ombre portée devra également être plus visible.*/
+.main-button:hover {
+  background-image: linear-gradient(to top, #a16be0 0%, #bd71e1 25%, #d579e1 50%, #eb84e0 75%, #ff93e1 100%);
+  box-shadow: 0px 4px 10px #9f9f9f;
+  transition-duration: 0.25s;
 }
 
-.plate:hover .fas.fa-check {
-  transform: translateX(0%) rotate(360deg);
-  transition: transform 500ms linear;
-}
-
-/* À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+/* Animation N°2 : À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
 bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
 survol sur desktop au lieu du clic. */
@@ -642,12 +629,44 @@ survol sur desktop au lieu du clic. */
   line-height: 0px;
 }
 
-/* Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
-L’ombre portée devra également être plus visible.*/
-.main-button:hover {
-  background-image: linear-gradient(to top, #a16be0 0%, #bd71e1 25%, #d579e1 50%, #eb84e0 75%, #ff93e1 100%);
-  box-shadow: 0px 4px 10px #9f9f9f;
-  transition-duration: 0.25s;
+/* Animation N°3 : Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
+cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
+3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
+utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
+toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
+graphique du site. */
+.loader {
+  background: linear-gradient(to top, rgb(147, 86, 220) 0%, rgb(179, 92, 220) 25%, rgb(207, 100, 220) 50%, rgb(232, 110, 219) 75%, rgb(255, 121, 218) 100%);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: 26px;
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 2s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__ohmyfood {
+  vertical-align: middle;
+  position: absolute;
+  top: 30%;
+}
+
+.loader__ohmyfood span {
+  width: 5px;
+  height: 20px;
+}
+
+.loader__fork {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  animation: rotate 1s linear infinite;
 }
 
 /* Animation N°4 : À l’arrivée sur la page, les plats devront apparaître progressivement avec un 
@@ -713,38 +732,32 @@ léger décalage dans le temps. Ils pourront soit apparaître un par un, soit pa
   animation-fill-mode: both;
 }
 
-.loader {
-  background: linear-gradient(to top, rgb(147, 86, 220) 0%, rgb(179, 92, 220) 25%, rgb(207, 100, 220) 50%, rgb(232, 110, 219) 75%, rgb(255, 121, 218) 100%);
-  width: 100%;
-  height: 100%;
-  line-height: 100%;
-  font-family: Shrikhand, sans-serif;
-  font-size: 26px;
-  position: fixed;
-  z-index: 5;
-  pointer-events: none;
-  animation: loader 1s ease-in-out 2s forwards;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Animation N°5 : Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
+Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de
+la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
+sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
+des points de suspension. Un exemple de l’effet attendu est fourni. */
+.fas.fa-check {
+  background-color: white;
+  border-radius: 100px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-right: 5px;
+  padding-left: 4px;
+  color: #99E2d0;
+  animation: full-rotation 1s ease 0s 1 normal forwards;
 }
 
-.loader__ohmyfood {
-  vertical-align: middle;
-  position: absolute;
-  top: 30%;
+.plate:hover .fas.fa-check {
+  transform: translateX(0%) rotate(360deg);
+  transition: transform 500ms linear;
+}
+.plate:hover .plate__price {
+  animation: plateprice 1s ease 0s 1 normal forwards;
 }
 
-.loader__ohmyfood span {
-  width: 5px;
-  height: 20px;
-}
-
-.loader__fork {
-  vertical-align: middle;
-  position: absolute;
-  top: 40%;
-  animation: rotate 1s linear infinite;
+.plate__validation {
+  animation: appearing-from-right 1s ease 0s 1 normal forwards;
 }
 
 /* Animation N°3 : Loading Spinner */
@@ -774,7 +787,7 @@ léger décalage dans le temps. Ils pourront soit apparaître un par un, soit pa
   }
 }
 /* Animation N°5 : Apparition d'un bouton */
-@keyframes myAnim {
+@keyframes full-rotation {
   0% {
     opacity: 0;
     transform: translateX(20px) rotate(360deg);
@@ -782,6 +795,28 @@ léger décalage dans le temps. Ils pourront soit apparaître un par un, soit pa
   100% {
     opacity: 1;
     transform: translateX(0) rotate(0deg);
+  }
+}
+@keyframes appearing-from-right {
+  0% {
+    opacity: 0;
+    transform: rotateY(-100deg);
+    transform-origin: right;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    transform-origin: right;
+  }
+}
+@keyframes plateprice {
+  0% {
+    opacity: 1;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
