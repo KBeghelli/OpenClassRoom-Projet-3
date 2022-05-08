@@ -68,3 +68,15 @@
 		transform: translateX(0);
 	}
 }
+
+@keyframes plateprice-tablet {
+	0% {
+		opacity: 1;
+		transform: translateX(120px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

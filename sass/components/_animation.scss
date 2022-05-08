@@ -190,8 +190,15 @@ des points de suspension. Un exemple de l’effet attendu est fourni. */
     }
 
     .plate__price {
-    
         animation: plateprice 1s ease 0s 1 normal forwards;
+        
+        @include respond-to('tablet') {
+            animation: plateprice-tablet 1s ease 0s 1 normal forwards;
+        }
+
+        @include respond-to('desktop') {
+            animation: plateprice 1s ease 0s 1 normal forwards;
+        }
     }
 }
 
