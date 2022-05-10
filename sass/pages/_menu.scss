@@ -19,6 +19,7 @@
             position: relative;
             padding-bottom: 22px;
             padding-top: $section-medium-space;
+            font-weight: normal;
 
             @include respond-to('desktop') {
                 padding-bottom: $section-light-space;

@@ -33,6 +33,9 @@
 
     &__list {
         padding-bottom: 10px;
+        @include respond-to('tablet') {
+            width: 34%;
+        }
     }
 
     &__i {
