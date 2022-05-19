@@ -1,11 +1,10 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
 @import "./pages/functioning";
 @import "./pages/showcase";
 @import "./layouts/footer";
-@import "./pages/mheader";
-@import "./pages/pheader";
+@import "./pages/mainheader";
+@import "./pages/pageheader";
 @import "./pages/location";
 @import "./base/typography";
 @import "./base/reset-browser-style";
