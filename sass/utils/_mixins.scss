@@ -15,3 +15,16 @@
   /* @include respond-to('tablet') {
         background-color: blue;
       } */
+
+/* Mixin pour box-shadow autoursdes éléments de functioning et des plats sur page-rest */
+
+@mixin shadow-background {
+  box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229, 229, 229, 0);
+}
+
+/* Mixin pour reset les margins top et bott, notament autours des titres */ 
+
+@mixin reset-title-space {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

@@ -18,7 +18,7 @@
             text-transform: uppercase;
             position: relative;
             padding-bottom: 22px;
-            padding-top: $section-medium-space;
+            padding-top: $section-light-space;
             font-weight: normal;
 
             @include respond-to('desktop') {
@@ -31,7 +31,7 @@
                 background-color: $tertiary-color;
                 width: 45px;
                 height: 4px;
-                top: 63px;
+                top: 42px;
                 left: 0px;
 
                 @include respond-to('desktop') {
@@ -62,6 +62,7 @@
     padding-left: $sideways-light-space;
     justify-content: space-between;
     transition-duration: 0.5s;
+    @include shadow-background ;
 
     @include respond-to('desktop') {
         width: 30%;
@@ -135,9 +136,9 @@
         align-items: center;
         border-radius: 0px 10px 10px 0px;
 
-        @include respond-to('desktop') {
+        /*@include respond-to('desktop') {
             padding-top: 1%;
             padding-bottom: 1%;
-        }
+        }*/
     }
 }

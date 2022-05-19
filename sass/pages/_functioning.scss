@@ -19,7 +19,7 @@
         margin-bottom: 25px;
         padding-top: 20px;
         padding-bottom: 20px;
-        box-shadow: 0px 2px 13px -7px #000, 0px 3px 14px -3px rgba(229,229,229,0);
+        @include shadow-background ;
         position:relative;
 
         @include respond-to('tablet') {
